@@ -1,0 +1,18 @@
+<h1>401 - Authentication Failed</h1>
+<p>
+    <blockquote>
+        The URL you've requested,    <b>{{ requestedUrl }}</b>
+        requires a correct username and password. Either you entered
+        an incorrect username/password, or your browser doesn't support
+        this feature.
+        <p>
+            Please inform the administrator of the referring page,
+            <b><a href="{{ referrerUrl }}">
+                {{ referrerUrl }}</a></b> if you think this was a mistake.
+        </p>
+    </blockquote>
+</p>
+
+<script>
+    window.title = 'Pacific Biosciences - 401 Error - Authentication Failed';
+</script>

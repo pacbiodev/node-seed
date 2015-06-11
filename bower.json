@@ -1,0 +1,24 @@
+{
+	"name": "node-seed",
+	"version": "0.0.0",
+	"description": "Node Authentication Service",
+	"keywords": [],
+	"homepage": "",
+	"license": {
+		"type": "MIT",
+		"url": "https://github.com/salsanfilippo/node-seed/blob/master/LICENSE"
+	},
+	"author": {
+		"name": "Sal Sanfilippo",
+		"email": "sal@sanfilippo.ws"
+	},
+	"main": "",
+	"ignore": [],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/salsanfilippo/node-seed"
+	},
+	"dependencies": {
+	},
+	"private": true
+}

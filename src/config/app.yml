@@ -1,0 +1,29 @@
+default:
+    port: 3000
+    cache_assets: true
+    public_key:
+    private_key:
+    ldap_hostname: nanofluidics.com
+    ldap_port: 389
+    jwt_token_issuer: pacificbiosciences.com
+    jwt_token_expiration: 4
+    jwt_token_refresh_expiration: 1
+
+development:
+    cache_assets: false
+    public_key: pacbio-dev-jwt-public.pem
+    private_key: pacbio-dev-jwt-private.pem
+
+test:
+    port: 3001
+    public_key: pacbio-test-jwt-public.pem
+    private_key: pacbio-test-jwt-private.pem
+
+production: &production
+    port: #{process.env.PORT}
+    public_key: pacbio-prod-jwt-public.pem
+    private_key: pacbio-prod-jwt-private.pem
+
+# aliases must be defined before you include!
+staging:
+    <<: *production
