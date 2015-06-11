@@ -57,7 +57,7 @@ The claims body is where the JWT really shines. It tells us:
   )
 ```
 
-##### Public Key
+##### Public Key***
 ```
 -----BEGIN CERTIFICATE-----
 MIIDRDCCAq2gAwIBAgIJAIgHkZiVGzKZMA0GCSqGSIb3DQEBCwUAMIG6MQswCQYD
@@ -81,7 +81,7 @@ xt5ep2RMXY3HMltdrGOB8mjKkpC1b8Ei
 -----END CERTIFICATE-----
 ```
 
-##### Private Key
+##### Private Key***
 ```
 -----BEGIN RSA PRIVATE KEY-----
 MIICXAIBAAKBgQDc24TvY1DodpGMdEBCtQ7NCuJ1VZSbAnORnA7F6oya230PZc+l
@@ -99,6 +99,7 @@ GfS3ZiJNuL1Hw3Bz7x1f/tRbneOEntHbD8lOu7HBP2KoR4BadJMXiXDrtp1mRHDK
 BeClSJgv+geUctyt6g0V/bGrLOj6ql5luJmBrbA5BjI=
 -----END RSA PRIVATE KEY-----
 ```
+*** Under NO circumstances should you uses these keys. These are for reference purpose only. Before deploying your server, procure a certificate (either self-signed or from certificate authority). Clients of this application only need the public key to verify tokens. The private key is only required on the server and should be safeguarded.
 
 Because we’ve signed this token, we can trust this information (**after verifying** the signature). With this trust, our sever can get on with the task of resolving the request accordingly – no need to hit your database for this information!
 
@@ -111,16 +112,17 @@ Clone this repo and setup the following tools on your machine:
 - [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) - Streaming build system.
 - [TSD](https://www.npmjs.com/package/tsd) - A package manager to search and install TypeScript definition files directly from the community driven DefinitelyTyped repository.
 - [Typescript 1.5](http://www.typescriptlang.org/#Download) - Offers classes, modules, and interfaces to help you build robust components.
+- [MongoDB](https://www.mongodb.org/downloads) - Datbase server used to cache logins locally.
 
 Once you have the tools setup install all dependencies by running:
 ```shell
 npm install
 ```
 
-Now start the webserver (available at `localhost:8000`) and the build process (runs on file change):
+Now start the webserver (available at `localhost:3000` by default) and the build process (runs on file change):
 
 ```shell
-npm start # `gulp play` if gulp is installed globally
+gulp play # Build, copy files and start server, `gulp debug` to start node in debug mode
 ```
 
 #### Learning Material
