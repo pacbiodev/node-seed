@@ -82,7 +82,8 @@ app.all('/*',
 
 app.use(FavIcon('%s/img/favicon.png'.sprintf(applicationRoot)));
 app.use(Express.static('%s/'.sprintf(applicationRoot)));
-app.use(Jwt.Utils.middleware().unless({ path: [ /^\/api\/auth\/login/,
+app.use(Jwt.Utils.middleware().unless({ path: [ /^\/$/,
+                                                /^\/api\/auth\/login/,
                                                 /\/api\/{0,1}$/,
                                                 /^\/error\/[0-9][0-9][0-9]\/{0,1}$/] }));
 
@@ -131,10 +132,11 @@ app.use('/error/:id', (req, res, next) => {
   }
 });
 
-// Everything else, serve up from content folder
+// Root will redirect to the API page. All other request to paths not
+// listed in the unless middleware handler for JWT will receive a 401
+// error.
 app.use((req, res) => {
-  // Use response.sendfile, as it streams instead of reading the file into memory.
-  res.sendFile('%s/public/index.html'.sprintf(applicationRoot));
+  return res.redirect('/api');
 });
 
 // Catch All Error Handler
