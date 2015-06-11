@@ -99,9 +99,10 @@ GfS3ZiJNuL1Hw3Bz7x1f/tRbneOEntHbD8lOu7HBP2KoR4BadJMXiXDrtp1mRHDK
 BeClSJgv+geUctyt6g0V/bGrLOj6ql5luJmBrbA5BjI=
 -----END RSA PRIVATE KEY-----
 ```
-*** Under NO circumstances should you use these keys. They are for reference purpose only. Before deploying your server, procure a certificate (either self-signed or from certificate authority). Clients of this application only need the public key to verify tokens (most clients will only hold the token in local storage or cookie and just pass to the server APIs). The private key is only required on the server and should be safeguarded.
-
 Because we’ve signed this token, we can trust this information (**after verifying** the signature). With this trust, our sever can get on with the task of resolving the request accordingly – no need to hit your database for this information!
+
+*** You should **NEVER** use these keys. They are for reference purpose only. Before deploying your server, procure a certificate (either self-signed or from certificate authority). Clients of this server application only need the public key to verify tokens (most clients will only hold the token in local storage or cookie and just pass to the server APIs). The private key is only required on the server and should be safeguarded.
+
 
 #### Setup
 ----------
