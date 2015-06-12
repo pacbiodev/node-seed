@@ -1,7 +1,7 @@
 # node-seed
 PacBio Seed for Node with JWT Security
 
-[![Build Status](https://cdn.rawgit.com/salsanfilippo/pacbio/master/public/img/build-passed.svg)](https://github.com/pacbiodev/node-seed)
+[![Build Status](https://cdn.rawgit.com/pacbiodev/resources/master/svgs/build-passed.svg)](https://github.com/pacbiodev/node-seed)
 > Minimal setup of NodeJS server with support for authentication and user identity managment using JSON Web Tokens ([JWT](http://jwt.io), [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)). Logins are validated against LDAP and cached locally. If LDAP is unavailable, a user will be authenticated against the local cache (assuming they have successfully logged into LDAP in the past). This is a Typescript project.
 
 #### JWT
