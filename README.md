@@ -57,7 +57,7 @@ The claims body is where the JWT really shines. It tells us:
   )
 ```
 
-##### Public Key***
+##### Public Key [![*](https://github.com/pacbiodev/resources/blob/master/images/warning.png)](#)
 ```
 -----BEGIN CERTIFICATE-----
 MIIDRDCCAq2gAwIBAgIJAIgHkZiVGzKZMA0GCSqGSIb3DQEBCwUAMIG6MQswCQYD
@@ -81,7 +81,7 @@ xt5ep2RMXY3HMltdrGOB8mjKkpC1b8Ei
 -----END CERTIFICATE-----
 ```
 
-##### Private Key***
+##### Private Key [![*](https://github.com/pacbiodev/resources/blob/master/images/warning.png)](#)
 ```
 -----BEGIN RSA PRIVATE KEY-----
 MIICXAIBAAKBgQDc24TvY1DodpGMdEBCtQ7NCuJ1VZSbAnORnA7F6oya230PZc+l
@@ -101,7 +101,7 @@ BeClSJgv+geUctyt6g0V/bGrLOj6ql5luJmBrbA5BjI=
 ```
 Because we’ve signed this token, we can trust this information (**after verifying** the signature). With this trust, our sever can get on with the task of resolving the request accordingly – no need to hit your database for this information!
 
-*** You should **NEVER** use these keys. They are for reference purpose only. Before deploying your server, procure a certificate (either self-signed or from certificate authority). Clients of this server application only need the public key to verify tokens (most clients will only hold the token in local storage or cookie and just pass to the server APIs). The private key is only required on the server and should be safeguarded.
+[![*](https://github.com/pacbiodev/resources/blob/master/images/warning.png)](#) You should **NEVER** use these keys. They are for reference purpose only. Before deploying your server, procure a certificate (either self-signed or from certificate authority). Clients of this server application only need the public key to verify tokens (most clients will only hold the token in local storage or cookie and just pass to the server APIs). The private key is only required on the server and should be safeguarded.
 
 
 #### Setup
