@@ -50,8 +50,8 @@ import ExpressExt = require('./express-ext');
 Mongoose.connect('mongodb://localhost/pacbio');
 
 var app = Express();
-import routes = require('./routes/auth');
-import users = require('./routes/users');
+import auth = require('./routes/auth');
+import user = require('./routes/user');
 
 import Jwt = require('./jwt');
 
@@ -97,8 +97,8 @@ app.get('/api',
         });
 
 // API Routes
-app.use('/api/auth', <Express.RequestHandler> routes);
-app.use('/api/users', <Express.RequestHandler> users);
+app.use('/api/auth', <Express.RequestHandler> auth);
+app.use('/api/user', <Express.RequestHandler> user);
 
 // Error Test
 // @TODO remove
