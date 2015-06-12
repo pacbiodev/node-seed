@@ -104,8 +104,13 @@ Because we’ve signed this token, we can trust this information (**after verify
 <a id="cert-warning"></a>
 [![*](https://github.com/pacbiodev/resources/blob/master/images/12x12/warning.png)](#cert-warning) You should **NEVER** use these keys. They are for reference purposes only. Before deploying your server, procure a certificate (either self-signed or from certificate authority). Clients of this server application only need the public key to verify tokens (most clients will only hold the token in local storage or cookie and just pass to the server APIs). The private key is only required on the server and should be safeguarded.
 
+##### Authentication Sequence
 <a id="sequence"></a>
 [![doc](https://github.com/pacbiodev/node-seed/blob/master/docs/diagrams/auth-seq.png)](#sequence)
+
+##### Example Application Usage Sequence
+<a id="app-sequence"></a>
+[![doc](https://github.com/pacbiodev/node-seed/blob/master/docs/diagrams/spa-seq.png)](#app-sequence)
 
 #### Setup
 ----------
