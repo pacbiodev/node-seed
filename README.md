@@ -101,7 +101,7 @@ BeClSJgv+geUctyt6g0V/bGrLOj6ql5luJmBrbA5BjI=
 ```
 Because we’ve signed this token, we can trust this information (**after verifying** the signature). With this trust, our sever can get on with the task of resolving the request accordingly – no need to hit your database for this information!
 
-[![*](https://github.com/pacbiodev/resources/blob/master/images/warning.png)](#) You should **NEVER** use these keys. They are for reference purpose only. Before deploying your server, procure a certificate (either self-signed or from certificate authority). Clients of this server application only need the public key to verify tokens (most clients will only hold the token in local storage or cookie and just pass to the server APIs). The private key is only required on the server and should be safeguarded.
+[![*](https://github.com/pacbiodev/resources/blob/master/images/warning.png)](#) You should **NEVER** use these keys. They are for reference purposes only. Before deploying your server, procure a certificate (either self-signed or from certificate authority). Clients of this server application only need the public key to verify tokens (most clients will only hold the token in local storage or cookie and just pass to the server APIs). The private key is only required on the server and should be safeguarded.
 
 
 #### Setup
@@ -113,7 +113,7 @@ Clone this repo and setup the following tools on your machine:
 - [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) - Streaming build system.
 - [TSD](https://www.npmjs.com/package/tsd) - A package manager to search and install TypeScript definition files directly from the community driven DefinitelyTyped repository.
 - [Typescript 1.5](http://www.typescriptlang.org/#Download) - Offers classes, modules, and interfaces to help you build robust components.
-- [MongoDB](https://www.mongodb.org/downloads) - Datbase server used to cache logins locally.
+- [MongoDB](https://www.mongodb.org/downloads) - Database server used to cache logins locally.
 
 Once you have the tools setup install all dependencies by running:
 ```shell
