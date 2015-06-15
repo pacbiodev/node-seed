@@ -64,6 +64,7 @@
     "gulp-size": "^1.2.1",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-tsc": "^0.10.1",
+    "gulp-tsd": "0.0.4",
     "gulp-watch": "^4.2.4",
     "systemjs-builder": "^0.10.6",
     "typescript-require": "0.2.9"

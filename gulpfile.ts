@@ -9,6 +9,7 @@ var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
+var tsd = require('gulp-tsd');
 var typescript = require('gulp-tsc');
 var watch = require('gulp-watch');
 
@@ -30,6 +31,14 @@ var paths = {
                     ts: 'src/**/*.ts'
                 }
             };
+
+gulp.task('tsd', 
+          (cb) => {
+            tsd({
+                  command: 'reinstall',
+                  config: './tsd.json'
+                }, cb);
+          })
 
 gulp.task('clean', 
           (done) => {
