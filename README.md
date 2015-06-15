@@ -126,7 +126,9 @@ Clone this repo and setup the following tools on your machine:
 Once you have the tools setup install all dependencies by running:
 ```shell
 npm install
+tsd install node
 gulp tsd
+mv typings/lib/lib.d.ts__COPY.TO.TSC.FOLDER__ [TSC_BIN]/lib.d.ts
 ```
 
 Now start the webserver (available at `localhost:3000` by default) and the build process (runs on file change):
