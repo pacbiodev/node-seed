@@ -1,0 +1,66 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+
+  "installed": {
+    "async/async.d.ts": {
+      "commit": "5ebf25ddbff4017a65efeb23cdd0003123e0e8e9"
+    }
+    "body-parser/body-parser.d.ts": {
+      "commit": "2d77b19dfab6cc00e8d9423ffa71f621709151f8"
+    }
+    "cookie-parser/cookie-parser.d.ts": {
+      "commit": "9dbba87a0de04697b26391557f48acfff113b7ce"
+    }
+    "crypto-js/crypto-js.d.ts": {
+      "commit": "1429bcc7fed522b2eac523118ffca0b2486578e1"
+    }
+    "errorhandler/errorhandler.d.ts": {
+      "commit": "7acd4688471832500a161e1c0514f919318fc050"
+    }
+    "express/express.d.ts": {
+      "commit": "16c6bbf0c9771581b4a01ea7b0c13ee8ec283772"
+    }
+    "express-validator/express-validator.d.ts": {
+      "commit": "e8ac76dbcf18f24ae50b8ac05aa8375952aabf6f"
+    }
+    "fs-extra/fs-extra.d.ts": {
+      "commit": "fa52db59121913b35e9641a0f73ccc3ffba58840"
+    }
+    "jsonwebtoken/jsonwebtoken.d.ts": {
+      "commit": "3f84d98bbac155c5f641c96e7e0d42c8cdb74c96"
+    }
+    "method-override/method-override.d.ts": {
+      "commit": "9dbba87a0de04697b26391557f48acfff113b7ce"
+    }
+    "mocha/mocha.d.ts": {
+      "commit": "66d8808c98856feae7d5a2d5acfc955110fb126d"
+    }
+    "moment/moment.d.ts": {
+      "commit": "4e5e52edca5d0d8eb92710cb40fa04b0cfda04d9"
+    }
+    "mongoose/mongoose.d.ts": {
+      "commit": "5ebf25ddbff4017a65efeb23cdd0003123e0e8e9"
+    }
+    "node/node.d.ts": {
+      "commit": "c6e59c3d7996833fd67af445ba15ee60be060e8b"
+    }
+    "nodemailer/nodemailer.d.ts": {
+      "commit": "231e5fd7306e693e63858813a50266c7da371a5f"
+    }
+    "nodemailer-direct-transport/nodemailer-direct-transport.d.ts": {
+      "commit": "231e5fd7306e693e63858813a50266c7da371a5f"
+    }
+    "nodemailer-smtp-transport/nodemailer-smtp-transport.d.ts": {
+      "commit": "231e5fd7306e693e63858813a50266c7da371a5f"
+    }
+    "winston/winston.d.ts": {
+      "commit": "943b4db4abb771ed881bb96a696f3a7d0760deb3"
+    }
+  }
+
+}
+
