@@ -126,6 +126,7 @@ Clone this repo and setup the following tools on your machine:
 Once you have the tools setup install all dependencies by running:
 ```shell
 npm install
+gulp tsd
 ```
 
 Now start the webserver (available at `localhost:3000` by default) and the build process (runs on file change):
