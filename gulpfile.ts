@@ -127,7 +127,7 @@ gulp.task('play',
 gulp.task('debug',
           ['default', 'watch'],
           (cb) => {
-              exec('node --debug=45892 dist/bin/www.js',
+              exec('node --debug=45890 dist/bin/www.js',
                    (err, stdout, stderr) => {
                        console.log(stdout);
                        console.log(stderr);
