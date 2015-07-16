@@ -1,3 +1,5 @@
+# Deprecated... Please use pacbio-seed
+
 # node-seed
 PacBio Seed for Node with JWT Security
 
